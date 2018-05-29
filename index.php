@@ -35,7 +35,7 @@
 
 </container>
 
-<div class="info">Resize this panel to see grids respond</div>
+<div class="info">touchhhh</div>
 </body>
 
 </html>
