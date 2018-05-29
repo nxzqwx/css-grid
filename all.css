@@ -1,0 +1,108 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Helvetica;
+  background-color: #20262e;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+  font-weight: light;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 140%;
+  margin-bottom: 1.8rem;
+}
+
+/* MOBILE FIRST */
+.title {
+  grid-area: title;
+}
+.share {
+  grid-area: share;
+}
+.coverimage {
+  grid-area: coverimage;
+}
+.postcontent {
+  grid-area: postcontent;
+}
+.form {
+  grid-area: form;
+}
+container {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "form"
+                       "coverimage"
+                       "postcontent"
+                       "share"
+                       "title";
+
+
+}
+
+div,
+picture {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* TABLET verzija */
+
+@media only screen and (min-width: 660px) {
+  body {
+    background-color: lightblue;
+  }
+  .title {
+    grid-area: title;
+  }
+  .share {
+    grid-area: share;
+  }
+  .coverimage {
+    grid-area: coverimage;
+  }
+  .postcontent {
+    grid-area: postcontent;
+  }
+  .form {
+    grid-area: form;
+  }
+  container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title share" "coverimage form" "postcontent .";
+  }
+}
+
+/* DESKTOP verzija */
+
+@media only screen and (min-width: 1024px) {
+  container {
+
+    grid-template-columns: 1fr 340px;
+  }
+  div,
+  picture {
+    padding: 40px;
+  }
+}
+.form {
+  grid-column
+}
+
+.info {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 20px;
+}
