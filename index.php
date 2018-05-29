@@ -9,9 +9,9 @@
 
 <container>
   <div class="title">
-    <h1>Ovo je naš naslov</h1>
+    <h1>Ovo nije naš naslov</h1>
   </div>
-  <div class="share">SHARE</div>
+  <div class="share">DONT SHARE</div>
   <picture class="coverimage">
     <img src="https://picsum.photos/300/200/?random"></picture>
   <div class="postcontent">
